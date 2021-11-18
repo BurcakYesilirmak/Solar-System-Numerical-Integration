@@ -284,7 +284,7 @@
     int main() {
       double t, dt, T, EKP[2], ANGM[2], a[2], e[2]; 
 
-      //  r[3]={Xh,Yh,Zh} rl[3]={Xl,Yl,Zl}  V[3]={Vxh,Vyh,Vzh} V[3]={Vxl,Vyl,Vzl} 
+      //  Rh[3]={Xh,Yh,Zh} Rl[3]={Xl,Yl,Zl}  Vh[3]={Vxh,Vyh,Vzh} Vl[3]={Vxl,Vyl,Vzl} 
       // DATA: NASA HORIZON https://ssd.jpl.nasa.gov/horizons/app.html#/
       // JUPITER INITIAL VECTORS 2018-Jun-05 
 

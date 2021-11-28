@@ -293,12 +293,14 @@
        double  v[]= {5.709741990408655E-03, -4.481465873394258E-03, -1.091471606521913E-04};
        double vl[]= {-0.0000000000000002100430652e-3, 0.0000000000000004062370784e-3, 0.0000000000000000152006560e-4};
     
-    //  energies(r, rl, v, vl, EKP, ANGM);
-    //  semimajor_eccentricity(r, rl, v, vl, a, e);  
-    //  printf("%.20le %.20le %.20le %.20le %.20le %.20le\n", a[0] , a[1], e[0], e[1], energy[0], energy[1]);
+      //  energies(r, rl, v, vl, EKP, ANGM);
+      //  semimajor_eccentricity(r, rl, v, vl, a, e);  
+      //  printf("%.20le %.20le %.20le %.20le %.20le %.20le\n", a[0] , a[1], e[0], e[1], energy[0], energy[1]);
 
+      // Time parameters
       T=  2*M_PI*1000;
       dt= 1e-2;
+      
       // error measure with long double 
       long double  A=  5.20273584355200957629L;       // semi-major axis lenght
       long double EC=  4.88056797545033895064e-02L;   // eccentricity 

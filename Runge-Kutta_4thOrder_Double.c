@@ -15,7 +15,7 @@ void energies(double r[3],double v[3], double *E, double *H)  {
     double i = r[1] * v[2] - r[2] * v[1] ;  // i = R1*V2-R2V1 
     double j = r[2] * v[0] - r[0] * v[2] ;  // j = R2*V0-R0V2 
     double k = r[0] * v[1] - r[1] * v[0] ;  // k = R0*V1-R1V0
-    *H = sqrt(i*i+j*j+k*k);     // angular momentum                              
+    *H = sqrt(i*i+j*j+k*k);                 // angular momentum                              
     } 
 
 void semimajor_eccentricity(double r[3], double v[3], double *a, double *e) {

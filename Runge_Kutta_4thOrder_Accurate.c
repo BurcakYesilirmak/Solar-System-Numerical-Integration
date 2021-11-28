@@ -142,7 +142,7 @@
    Summation2(mult_h3, mult_l3, -mult_h6, -mult_l6, &sum7, &sum8); // z 
    double sum_h[]= {sum3, sum5, sum7}, sq_h;
    double sum_l[]= {sum4, sum6, sum8}, sq_l;
-   SquareRoot(sum_h, sum_l, &sq_h, &sq_l);              // ecc_h, ecc_l => sqrt(x^2+y^2+z^2)
+   SquareRoot(sum_h, sum_l, &sq_h, &sq_l);              //  { ecc_h, ecc_l } => sqrt(x^2+y^2+z^2)
 
     // semi-major axis = 1 / ((2.0/norm_r) - v1/k2);
     Division(2.0, 0.0, norm_rh, norm_rl, &div_h, &div_l); 

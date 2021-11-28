@@ -74,7 +74,7 @@
     F2Sum(t, z, xh3, xl3);
     return; } 
  
- // the square of the vector's itself
+ // Square of the vector's itself
   void square_product(double xh[3], double xl[3],double *xh3, double *xl3) {        
       double u0, u1, v0, v1, t0, t1 ,t2, t3;
       Mult(xh[0], xl[0], xh[0], xl[0], &u0, &u1); // xh^2 & xl^2

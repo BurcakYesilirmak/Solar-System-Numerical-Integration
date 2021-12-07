@@ -19,7 +19,7 @@ void energies(double r[3],double v[3], double *E, double *H)  {
     } 
 
 void semimajor_eccentricity(double r[3], double v[3], double *a, double *e) {
-    double k2= 2.9619474286664206E-04;
+   double k2= 2.9619474286664206E-04;
    double norm_r,norm_v, r1, v1, d1;
    double x, y2, z;
    double var1, var2, var3;
@@ -99,7 +99,7 @@ int main() {
     T=  2*M_PI*1000;
     dt= 1e-2;
     
-    // error measure with long double 
+    // error measure/comparison with long double 
     long double  A=  5.20273584355200957629L;       // semi-major axis lenght
     long double EC=  4.88056797545033895064e-02L;   // eccentricity 
     long double  E= -1.85032942351832700980e-01L;   // mechanical energy of system

@@ -13,7 +13,7 @@
   } value;
 
 
-  // Functions of Accurate Arithmetic Operations:
+// Redistrubiton and Splitting Functions for Accurate Arithmetic Operations
  void VeltkampSplit(double x, double *xh, double *xl)   {        
     double p = C * x;
     double q = x - p;
@@ -36,6 +36,8 @@
     del_a = a-a1;
     del_b = b-b1;
     *xl = del_a+del_b;                                   }
+
+  // Functions of Accurate Arithmetic Operations:
 
   //Pichat and Neumaier’s summation algorithm
  void Summation2(double xh1, double xl1, double xh2, double xl2,double *xh3, double *xl3 ){  
@@ -74,7 +76,6 @@
     F2Sum(t, z, xh3, xl3);
     return; } 
  
- // Square of the vector's itself
   void square_product(double xh[3], double xl[3],double *xh3, double *xl3) {        
       double u0, u1, v0, v1, t0, t1 ,t2, t3;
       Mult(xh[0], xl[0], xh[0], xl[0], &u0, &u1); // xh^2 & xl^2
@@ -214,16 +215,11 @@
          krl[i]= vl[i];   }  }
 
    void RK4(double r[3], double rl[3], double v[3], double vl[3], double dt) { 
+       double kvh1[3], kvh2[3], kvh3[3], kvh4[3], kvl1[3], kvl2[3], kvl3[3], kvl4[3], kvfh[3], kvfl[3];
+       double krh1[3], krh2[3], krh3[3], krh4[3], krl1[3], krl2[3], krl3[3], krl4[3], krfh[3], krfl[3];
+       double  rh2[3],  rl2[3],  vh2[3],  vl2[3],  rh3[3],  rl3[3],  vh3[3],  vl3[3];
+       double  rh4[3],  rl4[3],  vh4[3],  vl4[3],   Rh[3],   Rl[3],   Vh[3],   Vl[3]; 
        double  d1, d2;
-       double kvh1[3], kvh2[3], kvh3[3], kvh4[3];
-       double kvl1[3], kvl2[3], kvl3[3], kvl4[3];
-       double krh1[3], krh2[3], krh3[3], krh4[3];
-       double krl1[3], krl2[3], krl3[3], krl4[3];
-       double  rh2[3],  rl2[3],  vh2[3],  vl2[3];
-        double rh3[3],  rl3[3],  vh3[3],  vl3[3];
-       double  rh4[3],  rl4[3],  vh4[3],  vl4[3]; 
-        double  Rh[3],   Rl[3],   Vh[3],   Vl[3];
-       double kvfh[3], kvfl[3], krfh[3], krfl[3]; 
 
       value  inp[3];
 
@@ -301,7 +297,7 @@
       T=  2*M_PI*1000;
       dt= 1e-2;
       
-      // error measure with long double 
+      // error measure/comparison with long double 
       long double  A=  5.20273584355200957629L;       // semi-major axis lenght
       long double EC=  4.88056797545033895064e-02L;   // eccentricity 
       long double  E= -1.85032942351832700980e-01L;   // energy of system

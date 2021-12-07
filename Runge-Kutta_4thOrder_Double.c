@@ -89,7 +89,7 @@ void RK4(double r[3], double v[3], double dt) {
 
 int main() {
     double t, dt, T, a, e, energy, angmomentum; 
-    //  r[3]={X,Y,Z}  V[3]={Vx,Vy,Vz} ;  
+    //  r[3]={X,Y,Z}  V[3]={Vx,Vy,Vz}  
     // DATA: NASA HORIZON https://ssd.jpl.nasa.gov/horizons/app.html#/
     // JUPITER INITIAL VECTORS 2018-Jun-05 
     double r[]= {-3.460167504309613E+00, -4.149454064629457E+00, 9.465721330038770E-02};
